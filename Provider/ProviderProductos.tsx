@@ -44,6 +44,8 @@ async function EliminarProducto(id: number) {
     }
     catch (error) {
         console.error('Error al eliminar el producto:', error);
+    }
+}
 
   return (
     <ContextProductos.Provider value={{ListaProducto, ListarProducto, agregarProducto,EliminarProducto}}>
