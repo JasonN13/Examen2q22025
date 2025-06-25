@@ -8,9 +8,19 @@ export default function Registro() {
     <View>
       <form>
         <input type="text" placeholder="Nombre del producto" required/>
-        <Texttarea name="descripcion" placeholder="Descripción del producto" required></Texttarea>
+        <Text name="descripcion" placeholder="Descripción del producto" required></Text>
         <input type="number" placeholder="Precio del producto" required/>
-        
+        <select name="categoria" required>
+          <option value="">Seleccione estado</option>
+    <option value="Disponible">Disponible</option>
+    <option value="No disponible">No disponible</option>
+  </select>
+  <input type="text" name="categoria" placeholder="Categoría" required />
+
+  <input type="url" name="url_fotografia" placeholder="URL de la Fotografía" />
+</form>
+
+
       
     </View>
   );
